@@ -45,3 +45,13 @@ else{
 //ternary operator
 age>=18 ? console.log("ADULT") : console.log("CHILD")
 
+//practice question
+let num=prompt("ENTER A NUMBER");
+if(num%5===0){
+    console.log(num,"IS MULTIPLE OF 5")
+}
+else{
+    console.log(num,"IS NOT A MULTIPLE OF 5")
+}
+
+
