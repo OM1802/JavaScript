@@ -1,0 +1,48 @@
+/*
+//HTML SCRIPT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">THIS IS A DIV!</div>
+    <p>HELLO</p>
+<script src="dom2.js"></script>
+</body>
+</html>
+
+//CSS SCRIPT
+#box{
+    height: 100px;
+    width: 100px;
+    border: 5px black solid;
+    background-color: cadetblue;
+    text-align: center;
+    color: darkred;
+}
+*/
+
+//JS SCRIPT
+let div=document.querySelector("div");
+let attr=div.getAttribute("id");
+console.log(attr);
+//div.setAttribute("id","123");
+console.log(div.style);
+div.style.backgroundColor="beige";
+
+let newBtn=document.createElement("button");
+newBtn.innerText="CLICK HERE";
+console.log(newBtn);
+
+div.append(newBtn);
+
+let newHeading=document.createElement("h1");
+newHeading.innerHTML="<i>DOCUMENT OBJECT MODEL!</i>";
+div.before(newHeading);
+
+let para=document.querySelector("p");
+para.remove();
