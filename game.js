@@ -22,10 +22,12 @@ boxes.forEach((box) =>{
     box.addEventListener("click",()=>{
         //box was pressed
         if(turnO){
+            box.style.color="#00ADB5";
             box.innerText="O";
             turnO=false;
         }
         else{
+            box.style.color="#BF092F";
             box.innerText="X";
             turnO=true;
         }
